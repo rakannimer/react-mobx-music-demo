@@ -1,0 +1,52 @@
+{
+  "name": "react-mobx-music-demo",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./public/dev/index.html --open",
+    "build": "parcel build ./src/index.tsx --out-dir build/ && cp ./public/prod/index.html ./build/index.html",
+    "serve:build": "serve --open ./build/",
+    "test": "jest --coverage",
+    "test:i": "jest --watch --coverage"
+  },
+  "dependencies": {
+    "downshift": "^3.1.1",
+    "keymaster": "rakannimer/keymaster",
+    "mobx-music": "^1.1.1",
+    "mobx-react": "^5.3.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-keymaster": "^1.0.1",
+    "react-mobx-music": "^1.0.2",
+    "tonal": "^2.0.0",
+    "tonal-core": "rakannimer/tonal",
+    "ts-component-component": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.3",
+    "@types/react": "^16.4.15",
+    "@types/react-dom": "^16.0.8",
+    "@types/react-test-renderer": "^16.0.3",
+    "comment-json": "^1.1.3",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.10.1",
+    "prettier": "^1.14.3",
+    "react-test-renderer": "^16.5.2",
+    "serve": "latest",
+    "ts-jest": "^23.10.3",
+    "typescript": "^3.1.1"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  },
+  "collectCoverageFrom": [
+    "src/*.{ts,tsx}"
+  ],
+  "description": "react-mobx-music-demo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rakannimer/react-mobx-music-demo"
+  },
+  "browserslist": "last 1 chrome versions"
+}
